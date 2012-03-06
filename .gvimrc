@@ -72,7 +72,7 @@ set formatoptions+=mM
 "文件 UTF-8 编码
 set fileencodings=utf-8
 "设置文件格式为unix
-set fileformat=unix
+"set fileformat=unix
 "开启命令显示
 set showcmd
 "设置窗口大小
@@ -94,7 +94,7 @@ set guioptions-=b
 set guioptions-=l
 set guioptions-=L
 "隐藏菜单栏
-set guioptions-=m
+"set guioptions-=m
 "隐藏工具栏
 set guioptions-=T
 

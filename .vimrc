@@ -30,9 +30,9 @@ set nocindent
 "默认情况下手动折叠
 set foldmethod=manual
 "显示行号（否：nonumber）
-"set number
+set number
 "不自动换行(否：wrap)
-set nowrap
+"set nowrap
 "缺省不产生备份文件
 set nobackup
 " 不要生成swap文件，当buffer被丢弃的时候隐藏它
