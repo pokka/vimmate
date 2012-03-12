@@ -6,24 +6,29 @@ set expandtab
 
 if has("autocmd")
   autocmd bufwritepost .vimrc source $MYVIMRC
-	autocmd FileType python setlocal et sta sw=4 sts=4
+	autocmd FileType python setlocal et sta sw=2 sts=2
 endif
 
+"show tab
+set showtabline=2
 " endif
 " 载入文件类型插件
 filetype plugin on 
 " 为特定文件类型载入相关缩进文件
 filetype indent on 
-colorscheme ir_black
-" colorscheme blackboard
-" colorscheme night
-" colorscheme twilight
+"colorscheme ir_black
+"colorscheme mac_classic 
+"colorscheme blackboard
+"colorscheme night
+"colorscheme twilight
+colorscheme desert
+set cursorline
 "语法样式开启
 syntax on
 "设置字体大小
-set guifont=Monaco:h12
+set guifont=Monaco
 "当使用了图形界面，并且环境变量 LANG 中不含“.”（即没有规定编码）时，把 Vim 的内部编码设为 UTF-8
-"set encoding=utf-8
+set encoding=utf-8
 " history文件中需要记录的行数
 set history=100 
 " 带有如下符号的单词不要被换行分割
@@ -72,12 +77,12 @@ set formatoptions+=mM
 "文件 UTF-8 编码
 set fileencodings=utf-8
 "设置文件格式为unix
-"set fileformat=unix
+set fileformat=unix
 "开启命令显示
 set showcmd
 "设置窗口大小
-set lines=35
-set columns=120
+set lines=38
+set columns=160
 " 启动的时候不显示那个援助索马里儿童的提示
 set shortmess=atI 
 " 导出 html 设置
@@ -86,7 +91,7 @@ let html_number_lines = 0
 let use_xhtml = 1
 
 "隐藏底部滚动条
-set guioptions-=b
+set guioptions+=b
 "隐藏右边滚动条
 "set guioptions-=R
 "set guioptions-=r
@@ -94,7 +99,7 @@ set guioptions-=b
 set guioptions-=l
 set guioptions-=L
 "隐藏菜单栏
-"set guioptions-=m
+set guioptions-=m
 "隐藏工具栏
 set guioptions-=T
 
@@ -159,3 +164,20 @@ nmap <silent> dd V<del>
 nmap <silent> dw viw<del>
 vmap <silent> dw iw<del>
 
+"add
+if has("gui_running") 
+  " Ctrl+S实现保存，如果未命名文件名会提示你选择保存路径和文件名 
+  :map <silent> <C-S> :if expand("%") == ""<CR>:browse confirm w<CR>:else<CR>:confirm w<CR>:endif<CR> 
+  "tab之间设换 => {:ctrl-TAB => '逐个设换',:alt+x => 'xgt'}
+  noremap <M-1> 1gt 
+  noremap <M-2> 2gt 
+  noremap <M-3> 3gt 
+  noremap <M-4> 4gt 
+  noremap <M-5> 5gt 
+  noremap <M-6> 6gt 
+  noremap <M-7> 7gt 
+  noremap <M-8> 8gt 
+  noremap <M-9> 9gt 
+  noremap <M-0> 10gt 
+  noremap <C-TAB> gt 
+endif

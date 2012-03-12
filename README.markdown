@@ -1,5 +1,7 @@
 custom [Vim](http://vim.org) like [TextMate](http://macromates.com) for Ruby Developers.
 
+##从huacnlee那里frok来的，挺好用，添加了一些插件和因应自己的一些习惯对配置作了一些修改，thx huacnlee
+
 ## Features
 
 * Simple UI, removed the Menu,Toolbar,Scrollbar etc.;
