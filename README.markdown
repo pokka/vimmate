@@ -37,9 +37,9 @@ cd vimmate
 * \P -- 在浏览器中预览 rdoc/html/markdown/textile 文件
 * v -- 进入键盘选择模式
 * V -- 进入键盘行选择模式 
-*add------------
-*Ctrl+Tab -- tab之间切换
-*alt+x -- x为数字键，切换到顺序数字(0=>10)的tab
+* add------------
+* Ctrl+Tab -- tab之间切换
+* alt+x -- x为数字键，切换到顺序数字(0=>10)的tab
 
 
 ### NERD tree 快捷键
