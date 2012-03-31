@@ -1,6 +1,8 @@
 "设置缩进
 set sw=2
 set ts=2
+set expandtab
+set smarttab
 
 " Source the vimrc file after saving it
 if has("autocmd")

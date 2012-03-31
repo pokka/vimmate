@@ -1,8 +1,11 @@
 "设置缩进
 set sw=2
 set ts=2
-set softtabstop=2
 set expandtab
+set smarttab
+
+" Display extra whitespace
+set list listchars=tab:»·,trail:·
 
 if has("autocmd")
   autocmd bufwritepost .vimrc source $MYVIMRC
