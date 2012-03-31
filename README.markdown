@@ -11,7 +11,7 @@ custom [Vim](http://vim.org) like [TextMate](http://macromates.com) for Ruby Dev
 * NERD tree with Project list,press F7 and then press ? to view help
 * Zen Coding
 * Show color as background with hex color code in CSS file 
-
+* slim syntax
 ## Install
 
 ```bash

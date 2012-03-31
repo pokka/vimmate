@@ -104,7 +104,7 @@ set guioptions-=m
 set guioptions-=T
 
 "启动打开NERD_tree
-NERDTree
+"NERDTree
 
 "设置Ctrl+F12呼出菜单栏
 function! ToggleMenuBar()
